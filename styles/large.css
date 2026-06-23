@@ -1,0 +1,8 @@
+@media only screen and (min-width: 55.1rem) {
+    /* 882px */
+
+    div.cert-card,
+    div.course-card {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

@@ -3,6 +3,37 @@ import { courses, certificates } from "../data/courses.mjs";
 
 createCourseButton(courses);
 
+//  --------------------  Certificate Button Selected ------------------------
+const certificateButton = document.querySelector('.cert-card');
+certificateButton.addEventListener('click', (e) => {
+    const button = e.target.closest('button');
+    if (!button) return;
+    certificateButton.querySelectorAll('button').forEach(btn => {
+        btn.classList.remove('button-selected');
+    });
+    button.classList.add('button-selected');
+});
+
+/*  --------------------  Certificate filters ------------------------ */
+const allCourses = document.querySelector('#all');
+allCourses.addEventListener('click', () => {
+    createCourseButton(courses);
+})
+const wcpCourses = document.querySelector('#wcp');
+wcpCourses.addEventListener('click', () => {
+    createCourseButton(courses.filter(course => course.certificate == 'Web and Computer Programming'));
+})
+const wdCourses = document.querySelector('#wd');
+wdCourses.addEventListener('click', () => {
+    createCourseButton(courses.filter(course => course.certificate == 'Web Development'));
+})
+const sdCourses = document.querySelector('#sd');
+sdCourses.addEventListener('click', () => {
+    createCourseButton(courses.filter(course => course.certificate == 'Software Development'));
+})
+
+
+
 /* ------------- CREATE A BUTTON FOR EACH COURSE DISPLAYED ----------------- */
 function createCourseButton(filteredCourses) {
     document.querySelector('#courses').innerHTML = '';
@@ -25,11 +56,10 @@ function createCourseButton(filteredCourses) {
         //  --------------------  add button ------------------------
         document.querySelector('#courses').appendChild(courseCard);
     });
-    console.log(total)
-    console.log(completed)
-    const endCard = document.createElement('button');
-    endCard.innerHTML = `${completed} completed out of ${total}, ${remaining} remaining`;
-    document.querySelector('#courses').appendChild(endCard);
+    //  --------------------  add end Summary ------------------------
+    const endCert = document.querySelector('#courseSummary');
+    endCert.innerHTML = `${completed} completed<br>${remaining} remaining`;
+    // endCert.innerHTML = `${completed} completed out of ${total}<br>${remaining} remaining`;
 
 
 }

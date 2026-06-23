@@ -14,6 +14,14 @@
 }
 
 :root {
+    /* Secondary Colors */
+    --secondary-0: #001a66;
+    --secondary-100: #0033cc;
+    --secondary-200: #3366ff;
+    --secondary-300: #99b3ff;
+    --secondary-400: #ccd9ff;
+
+
     --background-color-dark: #333;
     --background-color-light: #ccc;
 
@@ -104,7 +112,7 @@ footer {
 }
 
 .social {
-    padding: 1rem;
+    padding: 1rem 0 0 0;
     display: flex;
     justify-content: center;
     gap: 0.5rem;
@@ -134,10 +142,11 @@ footer {
 .date {
     /* background-color: var(--background-color-light); */
     padding: 1rem 0;
+    line-height: 1.5;
 }
 
 /* ******************** MAIN ******************** */
-/* normalize a tags */
+/* normalize <a> tags */
 a {
     text-decoration: none;
     color: var(--font-color-dark);
@@ -160,20 +169,24 @@ section {
         line-height: 1.5;
     }
 
-    & h2 {
-        background-color: #3D405B;
+    & button.button-selected {
+        background-color: var(--secondary-300);
+    }
+
+    & h2,
+    h3 {
+        background-color: var(--secondary-300);
         text-align: center;
     }
 
     & button {
         padding: 0.7rem;
-        /* margin: 0.5rem; */
         border-radius: 0.5rem;
         box-shadow: 1px 2px 2px var(--background-color-dark);
         font-size: 1rem;
+        cursor: pointer;
         transition: background-color 0.5s ease;
 
-        /* width: 90%; */
         &:hover {
             background-color: var(--hover-light);
         }
@@ -185,5 +198,20 @@ div.cert-card,
 div.course-card {
     display: grid;
     gap: 0.5rem;
+}
 
+dialog {
+    /* margin: auto; */
+    margin: 0.75rem;
+    max-width: 600px;
+
+    & button {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+    }
+
+    &::backdrop {
+        background-color: #001a66aa;
+    }
 }

@@ -35,13 +35,17 @@
     /* ******************** FOOTER ******************** */
     footer div {
         display: flex;
-        align-items: center;
+        justify-content: space-evenly;
     }
 
     /* ******************** CARDS ******************** */
     div.cert-card,
     div.course-card {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    dialog {
+        margin: 0.75rem auto;
     }
 
 }

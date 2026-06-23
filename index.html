@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <script type="module" src="scripts/nav-dates.mjs"></script>
     <script type="module" src="scripts/course-cards.mjs"></script>
@@ -49,8 +50,9 @@
         </section>
         <section>
             <h2>Certificates</h2>
-            <div class="cert-card">
-                <button class="button-selected" id="wcp">Web & Computer Programming</button>
+            <div class="cert-card course-button">
+                <button class="button-selected" id="all">ALL Courses</button>
+                <button id="wcp">Web & Computer Programming</button>
                 <button id="wd">Web Development</button>
                 <button id="sd">Software Development</button>
             </div>
@@ -58,6 +60,7 @@
         <section>
             <h2>Courses</h2>
             <div class="course-card" id="courses"> </div>
+            <h3 id="courseSummary"></h3>
         </section>
         <dialog id="modal"></dialog>
     </main>
@@ -71,8 +74,8 @@
                     src="images/socialmedia/facebook.svg" alt="facebook" loading="lazy"></a>
             <a href="https://x.com/home" target="_blank" rel="noopener noreferrer"><img
                     src="images/socialmedia/twitter-x.svg" alt="twitter-X" loading="lazy"></a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
-                    src="images/socialmedia/youtube.svg" alt="youtube" loading="lazy"></a>
+            <!-- <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
+                    src="images/socialmedia/youtube.svg" alt="youtube" loading="lazy"></a> -->
         </div>
         <div class="date">
             <!-- <p>Course Completed on 06-20-2026</p> -->
