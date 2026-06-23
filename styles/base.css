@@ -143,6 +143,7 @@ a {
     color: var(--font-color-dark);
 }
 
+dialog,
 section {
     margin: 1rem 0.5rem;
     border: 1px solid var(--background-color-dark);
@@ -151,9 +152,12 @@ section {
     overflow: hidden;
 
     & h2,
+    h3,
     div,
     p {
         padding: 0.5rem;
+        /* line-height: 3.25; */
+        line-height: 1.5;
     }
 
     & h2 {

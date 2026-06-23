@@ -353,7 +353,7 @@ export const courses = [
     {
         subject: 'CSE',
         number: 310,
-        title: '	Applied Programming',
+        title: 'Applied Programming',
         credits: 3,
         certificate: 'Software Development',
         description: 'This course will teach students to work in teams on large projects using new technology on self-defined projects. The class will simulate real-word programming projects with the aim of producing workable solutions that have potential impact.',
