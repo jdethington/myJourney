@@ -137,6 +137,7 @@ footer {
 }
 
 /* ******************** MAIN ******************** */
+/* normalize a tags */
 a {
     text-decoration: none;
     color: var(--font-color-dark);
@@ -176,14 +177,14 @@ section {
 
 }
 
-div.cert-card {
+div.cert-card,
+div.course-card {
     display: grid;
     gap: 0.5rem;
 
 }
 
-div.course-card {
-    margin: 1rem;
+/* div.course-card {
     border: 1px dashed red;
-    border-radius: 0.5rem;
-}
+    display: grid;
+} */

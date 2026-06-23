@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/medium.css">
 
     <script type="module" src="scripts/nav-dates.mjs"></script>
-    <!-- <script type="module" src="scripts/nav-dates.mjs"></script> -->
+    <script type="module" src="scripts/course-cards.mjs"></script>
 </head>
 
 <body>
@@ -57,27 +57,7 @@
         </section>
         <section>
             <h2>Courses</h2>
-            <div class="course-card">
-                <a href="http://jdethington.github.io/wdd130/" target="_blank" rel="noopener noreferrer">
-                    <h3>WDD 130: Web Fundamentals</h3>
-                </a>
-                <p>This was my first class learning web design. I started with HTML and started styling CSS using Flex
-                    and Grid. Finally I learned how to make Tables and Forms in HTML.</p>
-            </div>
-            <div class="course-card">
-                <a href="http://jdethington.github.io/wdd131/" target="_blank" rel="noopener noreferrer">
-                    <h3>WDD 131: Dynamic Web Fundamentals</h3>
-                </a>
-                <p>Here I learned about DOM (Document Object Model), JavaScript, CSS Media Queries, Responsive Menus.
-                    This was the first time I was asked to design and create a website.</p>
-            </div>
-            <div class="course-card">
-                <a href="http://jdethington.github.io/wdd231/" target="_blank" rel="noopener noreferrer">
-                    <h3>WDD 231: Web Frontend Development I</h3>
-                </a>
-                <p>This class got more fun. I learned about JSON, Async/Await in JavaScript, APIs, CSS Animation,
-                    Modals, more on Form Design, and got to design and create my second website.</p>
-            </div>
+            <div class="course-card" id="courses"> </div>
         </section>
         <dialog id="modal"></dialog>
     </main>

@@ -353,7 +353,7 @@ export const courses = [
     {
         subject: 'CSE',
         number: 310,
-        title: '',
+        title: '	Applied Programming',
         credits: 3,
         certificate: 'Software Development',
         description: 'This course will teach students to work in teams on large projects using new technology on self-defined projects. The class will simulate real-word programming projects with the aim of producing workable solutions that have potential impact.',
@@ -370,7 +370,7 @@ export const courses = [
     {
         subject: 'CSE',
         number: 325,
-        title: '',
+        title: '.NET Software Development',
         credits: 3,
         certificate: 'Software Development',
         description: 'This course leverages a students fundamental software development and core web technology background with the Microsoft .NET framework with C# using the Visual Studio Integrated Development Environment. Students will build upon a C# foundation using the ASP.NET framework to design and develop scalable, standards-based web sites, applications, and services using contemporary methodologies and established design patterns. Team work and programming deliverables will be required.',
