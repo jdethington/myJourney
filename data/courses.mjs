@@ -1,7 +1,7 @@
 // ------------- Web Certificates -------------------------
 export const certificates = [
     {
-        program: C129,
+        program: 'C129',
         certificate: 'Web & Computer Programming',
         employment: 'Training in web and computer programming prepares you for the constantly changing field of web and software development by helping you gain skills in designing user interfaces and a variety of programming languages. Careers that may be related to this degree include: Junior programmer, Software quality assurance tester, Web frontend developer,Web content developer, Junior JavaScript developer',
         outcome: [
@@ -22,7 +22,7 @@ export const certificates = [
         completedDate: '6-20-2026'
     },
     {
-        program: C175,
+        program: 'C175',
         certificate: 'Web Development',
         employment: 'Web development training enables you to use your skills in graphic design, aesthetics, branding, and software development to create a website. You will be able to increase user traffic, while improving user experience. Other careers that may be related to this degree include: General programmer, Web developer',
         outcome: [
@@ -44,7 +44,7 @@ export const certificates = [
         completedDate: ''
     },
     {
-        program: C178,
+        program: 'C178',
         certificate: 'Software Development',
         employment: '',
         outcome: [
