@@ -11,13 +11,19 @@ createCourseButton(courses);
 /* ------------- CREATE THE BUTTON FOR EACH DISPLAYED COURSE ----------------- */
 /* ------------- CREATE A BUTTON FOR EACH COURSE DISPLAYED ----------------- */
 function createCourseButton(filteredCourses) {
-    console.log(filteredCourses)
+    // console.log(filteredCourses)
 
     document.querySelector('#courses').innerHTML = '';
 
     filteredCourses.forEach(course => {
         const courseCard = document.createElement('button');
-        courseCard.innerHTML = `<strong>${course.subject} ${course.number}</strong><br>${course.title}`;
+
+        if (course.completed) {
+            courseCard.innerHTML = `<strong>&#10004; ${course.subject} ${course.number}</strong><br>${course.title}`;
+        } else {
+            courseCard.innerHTML = `<strong>${course.subject} ${course.number}</strong><br>${course.title}`;
+        }
+
 
         document.querySelector('#courses').appendChild(courseCard);
     });
