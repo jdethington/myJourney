@@ -38,4 +38,10 @@
         align-items: center;
     }
 
+    /* ******************** CARDS ******************** */
+    div.cert-card,
+    div.course-card {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }

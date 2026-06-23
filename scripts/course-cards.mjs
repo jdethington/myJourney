@@ -17,7 +17,7 @@ function createCourseButton(filteredCourses) {
 
     filteredCourses.forEach(course => {
         const courseCard = document.createElement('button');
-        courseCard.innerHTML = `<strong>${course.subject} ${course.number}</strong> - ${course.title}`;
+        courseCard.innerHTML = `<strong>${course.subject} ${course.number}</strong><br>${course.title}`;
 
         document.querySelector('#courses').appendChild(courseCard);
     });
