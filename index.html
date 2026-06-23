@@ -5,32 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacob Ethington</title>
+    <meta name="description"
+        content="Dedicated to demonstrating the advancement and learning progress of Jacob Ethington.">
+    <meta name="author" content="Jacob Ethington">
+
+    <meta property="og:title" content="Jacob Ethington | my journey">
+    <meta property="og:description"
+        content="Dedicated to demonstrating the advancement and learning progress of Jacob Ethington.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://jdethington.github.io/myJourney/">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+
+    <script type="module" src="scripts/nav-dates.mjs"></script>
+    <!-- <script type="module" src="scripts/nav-dates.mjs"></script> -->
 </head>
 
 <body>
     <header>
+        <img src="images/cheese.svg" alt="Cheese">
         <h1>Jacob Ethington</h1>
+        <button class="hamburger" id="nav-button" aria-label="navigation"></button>
     </header>
-    <nav>
-        <a href="https://jdethington.github.io/wdd130/">WDD 130</a>
-        <a href="https://jdethington.github.io/wdd131/">WDD 131</a>
-        <a href="https://jdethington.github.io/wdd231/">WDD 231</a>
+    <nav class="nav" id="nav-bar">
+        <ul>
+            <li> <a href="https://jdethington.github.io/wdd130/" target="_blank" rel="noopener">WDD 130</a></li>
+            <li> <a href="https://jdethington.github.io/wdd131/" target="_blank" rel="noopener">WDD 131</a></li>
+            <li> <a href="https://jdethington.github.io/wdd231/" target="_blank" rel="noopener">WDD 231</a></li>
+        </ul>
     </nav>
+
     <main>
         <section>
             <h2>What this is all about.</h2>
-            <p>I recently had a conversation with someone that recommended that I have some way to show what I have
-                learned along with what I have done outside of classes. This web site is all about doing this. You will
-                find links to other sites that I have created for each class. There is a section that will have links to
-                personal projects.</p>
+            <p>I recently had a conversation with someone that recommended that I show what I have
+                learned on my way to graduating from BYU-I with a bachelor's degree in Software Development. It was also
+                recommended that I have a way to demonstrate how I have used this knowledge in my own projects outside
+                of classes. This web site is all about doing this. You will find links to other sites that I have
+                created for each class. There is a section that will have links to personal projects.</p>
         </section>
         <section>
-            <h2>Class web sites</h2>
-            <div>
+            <h2>Certificates</h2>
+            <div class="cert-card">
+                <button class="button-selected" id="wcp">Web & Computer Programming</button>
+                <button id="wd">Web Development</button>
+                <button id="sd">Software Development</button>
             </div>
         </section>
+        <section>
+            <h2>Courses</h2>
+            <div class="course-card">
+                <a href="http://jdethington.github.io/wdd130/" target="_blank" rel="noopener noreferrer">
+                    <h3>WDD 130: Web Fundamentals</h3>
+                </a>
+                <p>This was my first class learning web design. I started with HTML and started styling CSS using Flex
+                    and Grid. Finally I learned how to make Tables and Forms in HTML.</p>
+            </div>
+            <div class="course-card">
+                <a href="http://jdethington.github.io/wdd131/" target="_blank" rel="noopener noreferrer">
+                    <h3>WDD 131: Dynamic Web Fundamentals</h3>
+                </a>
+                <p>Here I learned about DOM (Document Object Model), JavaScript, CSS Media Queries, Responsive Menus.
+                    This was the first time I was asked to design and create a website.</p>
+            </div>
+            <div class="course-card">
+                <a href="http://jdethington.github.io/wdd231/" target="_blank" rel="noopener noreferrer">
+                    <h3>WDD 231: Web Frontend Development I</h3>
+                </a>
+                <p>This class got more fun. I learned about JSON, Async/Await in JavaScript, APIs, CSS Animation,
+                    Modals, more on Form Design, and got to design and create my second website.</p>
+            </div>
+        </section>
+        <dialog id="modal"></dialog>
     </main>
     <footer>
+        <div class="social">
+            <a href="https://github.com/jdethington" target="_blank" rel="noopener noreferrer"><img
+                    src="images/socialmedia/github.svg" alt="github" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/jdethington/" target="_blank" rel="noopener noreferrer"><img
+                    src="images/socialmedia/linkedin.svg" alt="linkedin" loading="lazy"></a>
+            <a href="https://www.facebook.com/jacob.ethington.50" target="_blank" rel="noopener noreferrer"><img
+                    src="images/socialmedia/facebook.svg" alt="facebook" loading="lazy"></a>
+            <a href="https://x.com/home" target="_blank" rel="noopener noreferrer"><img
+                    src="images/socialmedia/twitter-x.svg" alt="twitter-X" loading="lazy"></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
+                    src="images/socialmedia/youtube.svg" alt="youtube" loading="lazy"></a>
+        </div>
+        <div class="date">
+            <!-- <p>Course Completed on 06-20-2026</p> -->
+            <p><span id="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona, USA</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
 
     </footer>
 </body>

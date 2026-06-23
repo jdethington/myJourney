@@ -1,0 +1,38 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+
+    /* ******************** NAVIGATION ******************** */
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+
+        & ul {
+            display: flex;
+        }
+
+        & a {
+            border: none;
+        }
+    }
+
+    /* ******************** FOOTER ******************** */
+    footer div {
+        display: flex;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,189 @@
+/* ---------- COLOR SCHEME ----------
+    terra cotta #E07A5F
+    deep slate blue #3D405B 
+    cheese orange #FFA600
+        */
+
+/* ******************** SITE WIDE ******************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+:root {
+    --background-color-dark: #333;
+    --background-color-light: #ccc;
+
+    --font-color-light: #ddd;
+    --font-color-dark: #3D405B;
+
+    --hover: #FFA600;
+    --hover-light: #FFA6007F;
+    --wayFinding: #eee;
+}
+
+/* ******************** HEADER ******************** */
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 2px 0.5rem 0.5rem;
+    align-items: end;
+    border-bottom: solid 1px var(--background-color-light);
+    gap: 0.5rem;
+
+    & img {
+        display: block;
+        /* width: 2.2rem; */
+        /* height: auto; */
+        padding-bottom: 0.5rem;
+    }
+}
+
+/* ******************** HAMBURGER ******************** */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--font-color-dark);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+    &::before {
+        content: "\2630";
+        font-size: 2.25rem;
+    }
+
+    &.show::before {
+        content: "\00D7";
+        /* font-size: 2.4rem; */
+
+    }
+}
+
+/* ******************** NAVIGATION ******************** */
+.nav {
+    display: none;
+
+    &.show {
+        display: block;
+    }
+
+    & ul {
+        list-style-type: none;
+    }
+
+    & a {
+        display: block;
+        padding: .82rem 10px;
+        color: var(--font-color-dark);
+        text-decoration: none;
+        border-bottom: solid 1px var(--background-color-light);
+        text-align: center;
+
+        transition: background-color 0.5s ease;
+
+        &:hover {
+            background-color: var(--hover-light);
+        }
+
+    }
+
+    /* & li.current {
+        background-color: var(--wayFinding);
+    } */
+
+}
+
+/* ******************** FOOTER ******************** */
+footer {
+    text-align: center;
+    background-color: var(--background-color-light);
+}
+
+.social {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border: var(--background-color-light) solid 1px;
+        border-radius: 4px;
+
+        transition: background-color 0.25s ease;
+
+        &:hover {
+            background-color: var(--hover-light);
+        }
+    }
+
+    & img {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+.date {
+    /* background-color: var(--background-color-light); */
+    padding: 1rem 0;
+}
+
+/* ******************** MAIN ******************** */
+a {
+    text-decoration: none;
+    color: var(--font-color-dark);
+}
+
+section {
+    margin: 0.5rem;
+    border: 1px solid var(--background-color-dark);
+    box-shadow: 3px 3px 3px var(--background-color-dark);
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    & h2,
+    div,
+    p {
+        padding: 0.5rem;
+    }
+
+    & h2 {
+        background-color: #3D405B;
+        text-align: center;
+    }
+
+    & button {
+        padding: 0.7rem;
+        /* margin: 0.5rem; */
+        border-radius: 0.5rem;
+        box-shadow: 2px 2px 2px var(--background-color-dark);
+        font-size: 1rem;
+        transition: background-color 0.5s ease;
+
+        /* width: 90%; */
+        &:hover {
+            background-color: var(--hover-light);
+        }
+    }
+
+}
+
+div.cert-card {
+    display: grid;
+    gap: 0.5rem;
+
+}
+
+div.course-card {
+    margin: 1rem;
+    border: 1px dashed red;
+    border-radius: 0.5rem;
+}
