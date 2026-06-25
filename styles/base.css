@@ -194,6 +194,25 @@ section {
         }
     }
 
+    /* -----  ----- */
+    & div.course-page {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 8px;
+        text-align: center;
+
+        & a {
+            width: 100%;
+            max-width: 250px;
+            min-width: 115px;
+            padding: .65rem 1.5rem;
+            background-color: var(--background-color-light);
+            border-radius: 0.5rem;
+            font-weight: bold;
+        }
+    }
+
+
 }
 
 div.cert-card,
