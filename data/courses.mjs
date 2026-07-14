@@ -86,7 +86,8 @@ export const courses = [
         ],
 
         completed: true,
-        completedDate: '12-13-2025'
+        completedDate: '12-13-2025',
+        block: '25B6'
     },
     {
         subject: 'WDD',
@@ -107,7 +108,8 @@ export const courses = [
             'Work effectively with others by communicating clearly, collaborating as a team member, fulfilling assignments, and meeting deadlines.'
         ],
         completed: true,
-        completedDate: '2-21-2026'
+        completedDate: '2-21-2026',
+        block: '26B1'
     },
     {
         subject: 'CSE',
@@ -127,7 +129,8 @@ export const courses = [
             'Follow good practices in designing, writing, and debugging functions.'
         ],
         completed: true,
-        completedDate: '2-21-2026'
+        completedDate: '2-21-2026',
+        block: '26B1'
     },
     {
         subject: 'CSE',
@@ -145,7 +148,8 @@ export const courses = [
             'Develop working software using the techniques of programming with classes.'
         ],
         completed: true,
-        completedDate: '4-18-2026'
+        completedDate: '4-18-2026',
+        block: '26B2'
     },
     {
         subject: 'WDD',
@@ -166,7 +170,8 @@ export const courses = [
             'Demonstrate the traits of an effective team member (such as clear communication, collaboration, fulfilling assignments, and meeting deadlines).'
         ],
         completed: true,
-        completedDate: '4-18-2026'
+        completedDate: '4-18-2026',
+        block: '26B2'
     },
     {
         subject: 'WDD',
@@ -187,7 +192,8 @@ export const courses = [
             'Demonstrate the traits of an effective team member (such as clear communication, collaboration, fulfilling assignments, and meeting deadlines).'
         ],
         completed: true,
-        completedDate: '6-20-2026'
+        completedDate: '6-20-2026',
+        block: '26B3'
     },
     {
         subject: 'ITM',
@@ -207,7 +213,8 @@ export const courses = [
             'Query a database using single and multiple tables, including built-in aggregate functions and WHERE clause filtering.'
         ],
         completed: true,
-        completedDate: '6-20-2026'
+        completedDate: '6-20-2026',
+        block: '26B3'
     },
     {
         subject: 'WDD',
@@ -230,7 +237,8 @@ export const courses = [
             'Developing and debugging HTML, CSS, and JavaScript programs that use medium complexity web technologies.'
         ],
         completed: false,
-        completedDate: ''
+        completedDate: '',
+        block: ''
     },
     {
         subject: 'CSE',
@@ -240,7 +248,9 @@ export const courses = [
         certificate: 'Web Development',
         description: 'This programming course focuses on constructing dynamic web sites using server-side languages, making use of databases and design patterns. The concepts introduced in Web Frontend Development courses are expected to be continued and implemented.',
         technology: [
-            ''
+            'JavaScript',
+            'Node.js',
+            'EJS'
         ],
         learningOutcome: [
             'Develop to current web frontend standards of validity and practice.',
@@ -251,7 +261,8 @@ export const courses = [
             'Demonstrate the skills of a productive team member (such as solving problems, collaborating with others, communicating clearly, fulfilling assignments, and meeting deadlines.)'
         ],
         completed: false,
-        completedDate: ''
+        completedDate: '',
+        block: ''
     },
     {
         subject: 'CSE',
@@ -271,7 +282,8 @@ export const courses = [
             'Effectively contribute to a team while learning independently.'
         ],
         completed: false,
-        completedDate: ''
+        completedDate: '',
+        block: ''
     },
     {
         subject: 'WDD',
@@ -291,7 +303,8 @@ export const courses = [
             'Work effectively in teams and demonstrate good communication skills.'
         ],
         completed: false,
-        completedDate: ''
+        completedDate: '',
+        block: ''
     },
     {
         subject: 'CSE',
@@ -301,7 +314,7 @@ export const courses = [
         certificate: 'Software Development',
         description: 'This course will introduce students to the common programming data structures with an emphasis on how to use them to solve practical, real-world problems.',
         technology: [
-            ''
+            'C#'
         ],
         learningOutcome: [
             'Apply a systematic approach to writing code to solve problems involving data structures.',
@@ -312,7 +325,8 @@ export const courses = [
             'Solve problems using data structures independently.'
         ],
         completed: false,
-        completedDate: ''
+        completedDate: '',
+        block: ''
     },
     {
         subject: 'CSE',
@@ -332,7 +346,8 @@ export const courses = [
             'Learn information from a wide variety of professional sources.'
         ],
         completed: false,
-        completedDate: ''
+        completedDate: '',
+        block: ''
     },
     {
         subject: 'CSE',
@@ -348,7 +363,8 @@ export const courses = [
             'Develop effective skills relating to building professional connections, confidence, and employability.'
         ],
         completed: false,
-        completedDate: ''
+        completedDate: '',
+        block: ''
     },
     {
         subject: 'CSE',
@@ -365,7 +381,8 @@ export const courses = [
             'Contribute and interact with peers to successfully develop software.'
         ],
         completed: false,
-        completedDate: ''
+        completedDate: '',
+        block: ''
     },
     {
         subject: 'CSE',
@@ -388,7 +405,8 @@ export const courses = [
             'Analyze, design, develop, and test a web-based application using ASP.NET with C# in a small team environment.'
         ],
         completed: false,
-        completedDate: ''
+        completedDate: '',
+        block: ''
     },
     {
         subject: 'CSE',
@@ -406,7 +424,8 @@ export const courses = [
             'Analyze software projects at various phases.'
         ],
         completed: false,
-        completedDate: ''
+        completedDate: '',
+        block: ''
     }
 
 ]

@@ -12,7 +12,7 @@
     }
 
     /* ******************** NAVIGATION ******************** */
-    header {
+    /* header {
         grid-template-columns: 30px auto;
     }
 
@@ -30,7 +30,7 @@
         & a {
             border: none;
         }
-    }
+    } */
 
     /* ******************** FOOTER ******************** */
     footer div {
