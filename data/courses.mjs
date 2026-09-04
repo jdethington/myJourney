@@ -68,7 +68,7 @@ export const certificates = [
     completed: false,
     completedDate: "",
   },
-]``;
+];
 // ------------- Web Certificate Courses -------------------------
 export const courses = [
   {
